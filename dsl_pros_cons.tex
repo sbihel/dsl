@@ -10,7 +10,7 @@
 \def\todo#1{{\color{red}TODO\@: #1}}
 \def\addref#1{{\color{red}$[$#1$]$}}
 
-\title{DSLs: Pros and Cons}
+\title{DSLs: Pros and Cons\\\large Based on \url{https://www.martinfowler.com/articles/languageWorkbench.html}}
 
 \author{Simon Bihel}
 
@@ -83,7 +83,8 @@ designing external DSLs, good programming tools are available when using a DSL\@
 
 \subsection{Design Investment}
 The investment of designing should be overcome by, at least, an increase on
-productivity.
+productivity. Also, DSLs should be simple and not be much harder than designing
+an API\@.
 
 \subsection{Language Cacophony}
 Adding new languages with external DSLs, or new libraries with internal DSLs can
@@ -92,15 +93,19 @@ system growing in complexity to create layers and abstractions to break things
 apart and have pieces that are understandable and usable for humans.
 
 \subsection{Accessibility}
-DSLs and especially external DSLs are hoped to help non-programmer to contribute
-to a software system.
+DSLs and especially external DSLs are hoped to help non-programmers to
+contribute to a software system with their expertise. No breakthrough has been
+seen as interactions between programming systems and non-programmers remain
+difficult. Although some software succeed as spreadsheets. It reminds us that
+DSLs don't have to be fully textual.
 
 
 \section{Conclusion}
 \label{conclusion}
 While the article was written in 2005 it is still relevant today. As predicted
 we saw the surge of language workbenches such as Eclipse Xtext or MPS\@. They
-leveraged external DSLs' unavailability of common programming tools.
+leveraged external DSLs' drawbacks from not being part of a common programming
+language and made the design phase an easier process.
 
 
 \end{document}

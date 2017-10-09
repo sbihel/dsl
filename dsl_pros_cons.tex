@@ -1,0 +1,106 @@
+\documentclass{proc}
+
+\usepackage[pdftex]{graphicx}
+\graphicspath{{images/}}
+
+\usepackage{hyperref}
+\usepackage{url} \urlstyle{sf}
+
+\usepackage{color}
+\def\todo#1{{\color{red}TODO\@: #1}}
+\def\addref#1{{\color{red}$[$#1$]$}}
+
+\title{DSLs: Pros and Cons}
+
+\author{Simon Bihel}
+
+\begin{document}
+\maketitle
+
+\section{Pros}
+\label{pros}
+This section presents general characteristics and advantages of DSLs. As
+internal and external DSLs are very different, most of the work will be in
+Section~\ref{int_vs_ext} to compare each advantages.
+
+\subsection{Simpleness}
+When abstracting and adding layers, the goal is to break from details that
+aren't directly useful to attain a certain goal. DSLs allow the user to interact
+with a system without manipulating its internals. For example, in the case of an
+external DSL, you can specify the configuration of a system without knowing how
+the system is implemented. In the case of an internal DSL you can write the
+interactions the system will have with its environment while still using the
+same language.
+
+
+\section{Cons}
+\label{cons}
+This section presents general inconvenience and drawbacks of using DSLs. As
+internal and external DSLs are very different, most of the work will be in
+Section~\ref{int_vs_ext} to compare each advantages. As many cons have basic
+counters, we can find misconceptions in Section~\ref{grey}.
+
+\subsection{Learning Phase}
+Adding a DSL, as with abstraction, creates new knowledge that users have to
+learn. In the case of external DSLs, as they have their own syntax, users have
+to learn it. For internal DSLs, users need to know the host language, and with
+common programming languages it can be long to learn. As we will see later it is
+always a trade-off and can cause harm if there are more tools than needed.
+
+
+\section{Internal vs. External}
+\label{int_vs_ext}
+
+\subsection{Readability}
+As we have seen, the goal of DSLs is to make things simpler. But something can
+be short and hard to understand or read, and different DSLs can offer different
+levels of readability. In the case of an internal DSL, we are bound to the host
+programming language. We have to respect its syntax, paradigms, etc. Depending
+on the language, a DSL will be more or less readable for an experienced
+programmer or a novice. When we design an external DSL we are completely free
+for the syntax and we are able to create the most simple and natural one for a
+particular problem.
+
+\subsection{Programming Languages Limitations}
+Another advantage of being free from an host programming language, is that we
+are not limited by its syntax, but also not limited by its limitations. We might
+not be able to define properties on a system if its language cannot express them
+(e.g.\ indicating prohibited class references).
+
+\subsection{Symbolic Integration}
+When being fully integrated in the host programming language, we can benefit of
+the programming environment tools.
+
+Tools can be limited when an internal DSL does too complex things or is being an
+abstraction layer that is too opaque. But also, thanks to modern tools for
+designing external DSLs, good programming tools are available when using a DSL\@.
+
+% \subsection{Design Limitations}
+
+
+\section{Grey Areas and Misconceptions}
+\label{grey}
+
+\subsection{Design Investment}
+The investment of designing should be overcome by, at least, an increase on
+productivity.
+
+\subsection{Language Cacophony}
+Adding new languages with external DSLs, or new libraries with internal DSLs can
+create a kind of language cacophony. While it is true, it is essential for a
+system growing in complexity to create layers and abstractions to break things
+apart and have pieces that are understandable and usable for humans.
+
+\subsection{Accessibility}
+DSLs and especially external DSLs are hoped to help non-programmer to contribute
+to a software system.
+
+
+\section{Conclusion}
+\label{conclusion}
+While the article was written in 2005 it is still relevant today. As predicted
+we saw the surge of language workbenches such as Eclipse Xtext or MPS\@. They
+leveraged external DSLs' unavailability of common programming tools.
+
+
+\end{document}

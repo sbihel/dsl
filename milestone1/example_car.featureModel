@@ -1,0 +1,17 @@
+CarEquipement {
+    mandatory Healthing {
+        xorGroup {
+            AirConditioningFrontAndRear
+            AirConditioning
+        }
+    }
+    mandatory Comfort {
+        optional AutomaticHeadLights
+    }
+    mandatory DrivingAndSafety {
+        optional FrontFogLights
+    }
+}
+Constraints {
+    AutomaticHeadLights => FrontFogLights
+}

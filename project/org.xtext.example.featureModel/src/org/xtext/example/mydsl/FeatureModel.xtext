@@ -2,8 +2,37 @@ grammar org.xtext.example.mydsl.FeatureModel with org.eclipse.xtext.common.Termi
 
 generate featureModel "http://www.xtext.org/example/mydsl/FeatureModel"
 
-Model:
-	greetings+=Greeting*;
+FeatureModel:
+	rootFeature+=Feature
+	(constraints+=Constraints)?
+;
 	
-Greeting:
-	'Hello' name=ID '!';
+Feature:
+	(optionalKeyword|mandatoryKeyword)? name=ID '{' children+=(Feature|Group)* '}'
+;
+
+Group:
+	(xorKeyword|orKeyword) '{' Feature '}'
+;
+
+Constraints:
+	constraintsKeyword '{' constraints+=(Constraint)+ '}'
+;
+
+Constraint: (ImplyConstraint|ExcludeConstraint);
+
+ImplyConstraint:
+	nameA=ID '=>' nameB=ID
+;
+
+ExcludeConstraint:
+	nameA=ID '=>' notKeyword nameB=ID
+;
+
+
+optionalKeyword: 'optional';
+mandatoryKeyword: 'mandatory';
+xorKeyword: 'xorGroup';
+orKeyword: 'orGroup';
+constraintsKeyword: 'Constraints';
+notKeyword: 'not';

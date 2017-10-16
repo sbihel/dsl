@@ -10,6 +10,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Feature">
     <eStructuralFeatures xsi:type="ecore:EReference" name="children" upperBound="-1"
         eType="#//Feature" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="F">
     <eStructuralFeatures xsi:type="ecore:EReference" name="feature" lowerBound="1"
@@ -26,20 +27,16 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="EMAND" eSuperTypes="#//E"/>
-  <eClassifiers xsi:type="ecore:EClass" name="GXOR">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pairchildfather" upperBound="-1"
-        eType="#//PairChildFather" containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GXOR" eSuperTypes="#//Group"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GOR" eSuperTypes="#//Group"/>
+  <eClassifiers xsi:type="ecore:EClass" name="I" eSuperTypes="#//Constraint"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EX" eSuperTypes="#//Constraint"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Constraint" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="feature" lowerBound="2"
+        upperBound="2" eType="#//Feature" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GOR">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pairchildfather" upperBound="-1"
-        eType="#//PairChildFather" containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Group" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="feature" lowerBound="1"
+        upperBound="-1" eType="#//Feature" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PairChildFather">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="father" lowerBound="1"
-        eType="#//Feature" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="child" lowerBound="1" eType="#//Feature"
-        containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="I"/>
-  <eClassifiers xsi:type="ecore:EClass" name="EX"/>
 </ecore:EPackage>

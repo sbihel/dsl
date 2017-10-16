@@ -12,6 +12,7 @@
     <genClasses ecoreClass="features_modeling.ecore#//R"/>
     <genClasses ecoreClass="features_modeling.ecore#//Feature">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Feature/children"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute features_modeling.ecore#//Feature/ID"/>
     </genClasses>
     <genClasses ecoreClass="features_modeling.ecore#//F">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//F/feature"/>
@@ -24,17 +25,15 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//E/edge"/>
     </genClasses>
     <genClasses ecoreClass="features_modeling.ecore#//EMAND"/>
-    <genClasses ecoreClass="features_modeling.ecore#//GXOR">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//GXOR/pairchildfather"/>
-    </genClasses>
-    <genClasses ecoreClass="features_modeling.ecore#//GOR">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//GOR/pairchildfather"/>
-    </genClasses>
-    <genClasses ecoreClass="features_modeling.ecore#//PairChildFather">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//PairChildFather/father"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//PairChildFather/child"/>
-    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//GXOR"/>
+    <genClasses ecoreClass="features_modeling.ecore#//GOR"/>
     <genClasses ecoreClass="features_modeling.ecore#//I"/>
     <genClasses ecoreClass="features_modeling.ecore#//EX"/>
+    <genClasses ecoreClass="features_modeling.ecore#//Constraint">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Constraint/feature"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="features_modeling.ecore#//Group">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Group/feature"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

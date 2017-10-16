@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/features_modeling/src" modelPluginID="features_modeling"
+    modelName="Features_modeling" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>features_modeling.ecore</foreignModel>
+  <genPackages prefix="Features_modeling" disposableProviderFactory="true" ecorePackage="features_modeling.ecore#/">
+    <genClasses ecoreClass="features_modeling.ecore#//G">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//G/r"/>
+    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//R"/>
+    <genClasses ecoreClass="features_modeling.ecore#//Feature">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Feature/children"/>
+    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//F">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//F/feature"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//F/r"/>
+    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//Edge">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Edge/feature"/>
+    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//E">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//E/edge"/>
+    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//EMAND"/>
+    <genClasses ecoreClass="features_modeling.ecore#//GXOR">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//GXOR/pairchildfather"/>
+    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//GOR">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//GOR/pairchildfather"/>
+    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//PairChildFather">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//PairChildFather/father"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//PairChildFather/child"/>
+    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//I"/>
+    <genClasses ecoreClass="features_modeling.ecore#//EX"/>
+  </genPackages>
+</genmodel:GenModel>

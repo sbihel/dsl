@@ -1,0 +1,22 @@
+Example {
+    mandatory E {
+        xorGroup {
+            A
+            B
+        }
+    }
+    mandatory F {
+        optional C
+    }
+    orGroup G {
+        H {
+            optional D
+        }
+    }
+}
+Constraints {
+    A => not C
+}
+PropFormula {
+    A or not B or D and not C and D
+}

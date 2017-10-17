@@ -38,13 +38,13 @@
     <genClasses ecoreClass="features_modeling.ecore#//Constraints">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Constraints/constraint"/>
     </genClasses>
-    <genClasses ecoreClass="features_modeling.ecore#//PropFormula">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//PropFormula/proposition"/>
+    <genClasses ecoreClass="features_modeling.ecore#//PropFormulaCNF">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//PropFormulaCNF/proposition"/>
     </genClasses>
     <genClasses ecoreClass="features_modeling.ecore#//AND"/>
-    <genClasses ecoreClass="features_modeling.ecore#//Proposition">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Proposition/feature"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Proposition/not"/>
+    <genClasses ecoreClass="features_modeling.ecore#//PropositionOR">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//PropositionOR/feature"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//PropositionOR/not"/>
     </genClasses>
     <genClasses ecoreClass="features_modeling.ecore#//NOT">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//NOT/feature"/>

@@ -841,9 +841,9 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_w5p84LMbEeeDffvd25z_Jg" name="PropFormula" tooltipText="" outgoingEdges="_NKJXALMcEeeDffvd25z_Jg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="features_modeling.ecore#//PropFormula"/>
-      <semanticElements xmi:type="ecore:EClass" href="features_modeling.ecore#//PropFormula"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_w5p84LMbEeeDffvd25z_Jg" name="PropFormulaCNF" tooltipText="" outgoingEdges="_NKJXALMcEeeDffvd25z_Jg" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="features_modeling.ecore#//PropFormulaCNF"/>
+      <semanticElements xmi:type="ecore:EClass" href="features_modeling.ecore#//PropFormulaCNF"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -852,9 +852,9 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_Jo2agLMcEeeDffvd25z_Jg" name="Proposition" tooltipText="" outgoingEdges="_TRtLILMcEeeDffvd25z_Jg _UDIoELMcEeeDffvd25z_Jg" incomingEdges="_NKJXALMcEeeDffvd25z_Jg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="features_modeling.ecore#//Proposition"/>
-      <semanticElements xmi:type="ecore:EClass" href="features_modeling.ecore#//Proposition"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_Jo2agLMcEeeDffvd25z_Jg" name="PropositionOR" tooltipText="" outgoingEdges="_TRtLILMcEeeDffvd25z_Jg _UDIoELMcEeeDffvd25z_Jg" incomingEdges="_NKJXALMcEeeDffvd25z_Jg" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="features_modeling.ecore#//PropositionOR"/>
+      <semanticElements xmi:type="ecore:EClass" href="features_modeling.ecore#//PropositionOR"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -864,8 +864,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_NKJXALMcEeeDffvd25z_Jg" name="[0..*] proposition" sourceNode="_w5p84LMbEeeDffvd25z_Jg" targetNode="_Jo2agLMcEeeDffvd25z_Jg">
-      <target xmi:type="ecore:EReference" href="features_modeling.ecore#//PropFormula/proposition"/>
-      <semanticElements xmi:type="ecore:EReference" href="features_modeling.ecore#//PropFormula/proposition"/>
+      <target xmi:type="ecore:EReference" href="features_modeling.ecore#//PropFormulaCNF/proposition"/>
+      <semanticElements xmi:type="ecore:EReference" href="features_modeling.ecore#//PropFormulaCNF/proposition"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_NKJXAbMcEeeDffvd25z_Jg" description="_iFTwwbIIEeetwdT-VO9r5A" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_NKJXArMcEeeDffvd25z_Jg" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -888,8 +888,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_TRtLILMcEeeDffvd25z_Jg" name="[0..*] feature" sourceNode="_Jo2agLMcEeeDffvd25z_Jg" targetNode="_SHCysLIHEeetwdT-VO9r5A">
-      <target xmi:type="ecore:EReference" href="features_modeling.ecore#//Proposition/feature"/>
-      <semanticElements xmi:type="ecore:EReference" href="features_modeling.ecore#//Proposition/feature"/>
+      <target xmi:type="ecore:EReference" href="features_modeling.ecore#//PropositionOR/feature"/>
+      <semanticElements xmi:type="ecore:EReference" href="features_modeling.ecore#//PropositionOR/feature"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_TRtLIbMcEeeDffvd25z_Jg" description="_iFTwwbIIEeetwdT-VO9r5A" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_TRtLIrMcEeeDffvd25z_Jg" showIcon="false">
           <customFeatures>labelSize</customFeatures>
@@ -901,8 +901,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_UDIoELMcEeeDffvd25z_Jg" name="[0..*] not" sourceNode="_Jo2agLMcEeeDffvd25z_Jg" targetNode="_RPmwgLMcEeeDffvd25z_Jg">
-      <target xmi:type="ecore:EReference" href="features_modeling.ecore#//Proposition/not"/>
-      <semanticElements xmi:type="ecore:EReference" href="features_modeling.ecore#//Proposition/not"/>
+      <target xmi:type="ecore:EReference" href="features_modeling.ecore#//PropositionOR/not"/>
+      <semanticElements xmi:type="ecore:EReference" href="features_modeling.ecore#//PropositionOR/not"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_UDJPILMcEeeDffvd25z_Jg" description="_iFTwwbIIEeetwdT-VO9r5A" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_UDJPIbMcEeeDffvd25z_Jg" showIcon="false">
           <customFeatures>labelSize</customFeatures>

@@ -5,6 +5,7 @@ generate featureModel "http://www.xtext.org/example/mydsl/FeatureModel"
 FeatureModel:
 	rootFeature+=Feature
 	(constraints+=Constraints)?
+	(propFormula+=PropFormula)?
 ;
 	
 Feature:
@@ -12,7 +13,7 @@ Feature:
 ;
 
 Group:
-	(xorKeyword|orKeyword) '{' Feature '}'
+	(xorGroupKeyword|orGroupKeyword) '{' Feature '}'
 ;
 
 Constraints:
@@ -29,10 +30,21 @@ ExcludeConstraint:
 	nameA=ID '=>' notKeyword nameB=ID
 ;
 
+PropFormula: // CNF
+	propFormulaKeyword '{' firstProp+=Proposition (andKeyword rest+=Proposition)* '}'
+;
+
+Proposition:
+	notKeyword? nameA=ID (orKeyword notKeyword? nameRest+=ID)*
+;
+
 
 optionalKeyword: 'optional';
 mandatoryKeyword: 'mandatory';
-xorKeyword: 'xorGroup';
-orKeyword: 'orGroup';
+xorGroupKeyword: 'xorGroup';
+orGroupKeyword: 'orGroup';
 constraintsKeyword: 'Constraints';
 notKeyword: 'not';
+propFormulaKeyword: 'PropFormula';
+andKeyword: 'and';
+orKeyword: 'or';

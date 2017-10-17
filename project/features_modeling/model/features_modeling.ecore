@@ -39,4 +39,23 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="feature" lowerBound="1"
         upperBound="-1" eType="#//Feature" containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Constraints">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constraint" upperBound="-1"
+        eType="#//Constraint" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PropFormula">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="proposition" upperBound="-1"
+        eType="#//Proposition" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AND"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Proposition">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="feature" upperBound="-1"
+        eType="#//Feature" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="not" upperBound="-1" eType="#//NOT"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NOT">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="feature" lowerBound="1"
+        eType="#//Feature" containment="true"/>
+  </eClassifiers>
 </ecore:EPackage>

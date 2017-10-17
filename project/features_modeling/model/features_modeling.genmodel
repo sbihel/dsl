@@ -35,5 +35,19 @@
     <genClasses image="false" ecoreClass="features_modeling.ecore#//Group">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Group/feature"/>
     </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//Constraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Constraints/constraint"/>
+    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//PropFormula">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//PropFormula/proposition"/>
+    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//AND"/>
+    <genClasses ecoreClass="features_modeling.ecore#//Proposition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Proposition/feature"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//Proposition/not"/>
+    </genClasses>
+    <genClasses ecoreClass="features_modeling.ecore#//NOT">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference features_modeling.ecore#//NOT/feature"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

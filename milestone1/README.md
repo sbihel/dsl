@@ -4,3 +4,5 @@
 - The handwritten Xtext grammar is in [org.xtext.example.featureModel](../project/org.xtext.example.featureModel/src/org/xtext/example/mydsl/FeatureModel.xtext)
 
 The handwritten model seems to follow more the formal definition.
+
+- [ ] Make some classes in Ecore unique.
